@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    height: 155vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(34, 34, 34);
+}
+
+.container{
+    height: 100vh;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-template-rows: repeat(4, 2fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+}
+
+.card{
+    height: 350px;
+    width: 300px;
+    margin: 10px;
+    transition: 300ms;
+    height: 78vh;
+}
+
+.personaje, .personaje_2, .personaje_3, .personaje_4, .personaje_5, .personaje_6, .personaje_7, .personaje_8, .personaje_9, .personaje_10, .personaje_11, .personaje_12{
+    height: 350px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    background-color: #dba43d;
+    transition: 300ms;
+    position: absolute;
+}
+
+.imagen_personaje{
+    height: 350px;
+    width: 200px;
+    background-image: url(images/Naruto.webp);
+    background-size: cover;
+    margin-bottom: 200px;
+    transition: 300ms;
+    filter: drop-shadow(5px -4px 10px #000);
+}
+
+.imagen_personaje_2{
+    height: 350px;
+    width: 250px;
+    background-image: url(images/Kakashi.png);
+    background-size: cover;
+    margin-bottom: 200px;
+    transition: 300ms;
+    filter: drop-shadow(5px -4px 10px #000);
+}
+
+.imagen_personaje_3{
+    height: 350px;
+    width: 200px;
+    background-image: url(images/Jiraiya.webp);
+    background-size: cover;
+    margin-bottom: 200px;
+    transition: 300ms;
+    filter: drop-shadow(5px -4px 10px #000);
+}
+
+
+.imagen_personaje_4{
+    height: 350px;
+    width: 200px;
+    background-image: url(images/Tsunade.png);
+    background-size: cover;
+    margin-bottom: 200px;
+    transition: 300ms;
+    filter: drop-shadow(5px -4px 10px #000);
+}
+.imagen_personaje_5{
+    height: 350px;
+    width: 200px;
+    background-image: url(images/Shikamaru.png);
+    background-size: cover;
+    margin-bottom: 200px;
+    transition: 300ms;
+    filter: drop-shadow(5px -4px 10px #000);
+}
+.imagen_personaje_6{
+    height: 350px;
+    width: 200px;
+    background-image: url(images/Neji.webp);
+    background-size: cover;
+    margin-bottom: 200px;
+    transition: 300ms;
+    filter: drop-shadow(5px -4px 10px #000);
+}
+.imagen_personaje_7{
+    height: 350px;
+    width: 200px;
+    background-image: url(images/Shino.png);
+    background-size: cover;
+    margin-bottom: 200px;
+    transition: 300ms;
+    filter: drop-shadow(5px -4px 10px #000);
+}
+.imagen_personaje_8{
+    height: 350px;
+    width: 200px;
+    background-image: url(images/Itachi_Uchiha.webp);
+    background-size: cover;
+    margin-bottom: 200px;
+    transition: 300ms;
+    filter: drop-shadow(5px -4px 10px #000);
+}
+.imagen_personaje_9{
+    height: 350px;
+    width: 200px;
+    background-image: url(images/Gaara.webp);
+    background-size: cover;
+    margin-bottom: 200px;
+    transition: 300ms;
+    filter: drop-shadow(5px -4px 10px #000);
+}
+.imagen_personaje_10{
+    height: 350px;
+    width: 200px;
+    background-image: url(images/Deidara.webp);
+    background-size: cover;
+    margin-bottom: 200px;
+    transition: 300ms;
+    filter: drop-shadow(5px -4px 10px #000);
+}
+.imagen_personaje_11{
+    height: 350px;
+    width: 200px;
+    background-image: url(images/Kiba.png);
+    background-size: cover;
+    margin-bottom: 200px;
+    transition: 300ms;
+    filter: drop-shadow(5px -4px 10px #000);
+}
+.imagen_personaje_12{
+    height: 350px;
+    width: 200px;
+    background-image: url(images/Orochimaru.webp);
+    background-size: cover;
+    margin-bottom: 200px;
+    transition: 300ms;
+    filter: drop-shadow(5px -4px 10px #000);
+}
+.detalle, .detalle_2, .detalle_3, .detalle_4, .detalle_5, .detalle_6, .detalle_7, .detalle_8, .detalle_9, .detalle_10, .detalle_11, .detalle_12{
+    height: 200px;
+    width: 300px;
+    background-color: rgb(216, 216, 216);
+    position: absolute;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    margin-top: 150px;
+    z-index: 2;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    transition: 300ms;
+}
+
+
+.card:hover{
+    transform: scale(1.1);
+}
+.card:hover .imagen_personaje{
+    transform: translatey(-40px);
+    transition: 300ms;
+    filter: none;
+    background-image: url(images/Naruto\ v2.png)
+}
+.card:hover .imagen_personaje_2{
+    transform: translatey(-40px);
+    transition: 300ms;
+    filter: none;
+    background-image: url(images/Kakashi_Hatake.webp);
+}
+.card:hover .imagen_personaje_3{
+    transform: translatey(-40px);
+    transition: 300ms;
+    filter: none;
+    background-image: url(images/Jiraiya2.png);
+}
+.card:hover .imagen_personaje_4{
+    transform: translatey(-40px);
+    transition: 300ms;
+    filter: none;
+    background-image: url(images/Tsunade2.webp);
+}
+.card:hover .imagen_personaje_5{
+    transform: translatey(-40px);
+    transition: 300ms;
+    filter: none;
+    background-image: url(images/shikamaru2.webp);
+}
+.card:hover .imagen_personaje_6{
+    transform: translatey(-40px);
+    transition: 300ms;
+    filter: none;
+    background-image: url(images/Neji2.png);
+}
+.card:hover .imagen_personaje_7{
+    transform: translatey(-40px);
+    transition: 300ms;
+    filter: none;
+    background-image: url(images/Shino2.png);
+}
+.card:hover .imagen_personaje_8{
+    transform: translatey(-40px);
+    transition: 300ms;
+    filter: none;
+    background-image: url(images/Itachi2.png);
+}
+.card:hover .imagen_personaje_9{
+    transform: translatey(-40px);
+    transition: 300ms;
+    filter: none;
+    background-image: url(images/Gaara2.png);
+}
+.card:hover .imagen_personaje_10{
+    transform: translatey(-40px);
+    transition: 300ms;
+    filter: none;
+    background-image: url(images/Deidara02.webp);
+}
+.card:hover .imagen_personaje_11{
+    transform: translatey(-40px);
+    transition: 300ms;
+    filter: none;
+    background-image: url(images/Kiba_Inuzuka_2.webp);
+}
+.card:hover .imagen_personaje_12{
+    transform: translatey(-40px);
+    transition: 300ms;
+    filter: none;
+    background-image: url(images/Orochimaru2.webp);
+}
+
+
+.card:hover .personaje{
+    background-image: radial-gradient(white,rgb(255, 153, 0));
+}
+
+.card:hover .personaje_2{
+    background-image: radial-gradient(white,rgb(68, 68, 68));
+}
+
+.card:hover .personaje_3{
+    background-image: radial-gradient(white,rgb(119, 0, 255));
+}
+.card:hover .personaje_4{
+    background-image: radial-gradient(white,rgb(0, 255, 191));
+}
+.card:hover .personaje_5{
+    background-image: radial-gradient(white,rgb(0, 0, 0));
+}
+.card:hover .personaje_6{
+    background-image: radial-gradient(white,rgb(49, 123, 184));
+}
+.card:hover .personaje_7{
+    background-image: radial-gradient(white,rgba(255, 208, 0, 0.829));
+}
+.card:hover .personaje_8{
+    background-image: radial-gradient(white,rgb(156, 114, 175));
+}
+.card:hover .personaje_9{
+    background-image: radial-gradient(white,rgb(98, 134, 189));
+}
+.card:hover .personaje_10{
+    background-image: radial-gradient(white,rgb(60, 224, 88));
+}
+.card:hover .personaje_11{
+    background-image: radial-gradient(white,rgb(250, 158, 158));
+}
+.card:hover .personaje_12{
+    background-image: radial-gradient(white,rgb(231, 96, 243));
+}
+
+h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p{
+    margin: auto;
+    width: 90%;
+    font-size: 12px;
+}
